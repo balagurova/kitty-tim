@@ -13,7 +13,7 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     resetSketch();
-    stroke(255)
+    stroke(255) 
 
 }
 
