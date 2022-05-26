@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight).parent("image-2");
+    createCanvas(windowWidth, windowHeight);
     resetSketch();
     stroke(255)
 
