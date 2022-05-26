@@ -6,12 +6,12 @@ var w;
 
 
 function preload() {
-    img = loadImage('img/01.png');
+    img = loadImage('img/02.png');
 
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight).parent("image-2");
     resetSketch();
     stroke(255)
 
