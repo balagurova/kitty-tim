@@ -12,21 +12,21 @@
     </style>
 </head>
 <body>
+<div id="introduction">
+    <pre>BIG TITLE & intro text...</pre>
+</div>
 
     <div class="section">
-        <div class="sticky" id="image-1">
-            <iframe src="https://balagurova.github.io/kitty-tim/image-1" frameborder="0" style="height: 500px; width: 500px; margin:0;"></iframe>
+        <div class="sticky" id="image-1" style='visibility: hidden;'>
+            <iframe src="https://balagurova.github.io/kitty-tim/image-1" frameborder="0" style="height: 700px; width: 700px;  margin:0;"></iframe>
         </div>
-<div class="sticky" id="image-2" style="visibility: hidden;">
-    <iframe src="https://balagurova.github.io/kitty-tim/image-2" frameborder="0" style="height: 500px; width: 500px; margin:0;"></iframe>
+<div class="sticky" id="image-2" style='visibility: hidden;'>
+    <iframe src="https://balagurova.github.io/kitty-tim/image-2" frameborder="0" style="height: 700px; width: 700px;  margin:0;"></iframe>
 </div>
     
 
     
-    <div id="overview" class="subsection" >
-        <pre>Wine characteristics</pre>
-        <p>There are many different characteristics of wine: <span style="background-color:#bcc5b0; padding:1px 4px;border-radius: 2px;"> aromas</span>, <span style="background-color:#dad49d; padding:1px 4px;border-radius: 2px;"> bouquet</span>, <span style="background-color:#bfaaba; padding:1px 4px;border-radius: 2px;"> faults</span>. Let's look closer to each of them.</p>
-    </div>
+    
     <div id="aromas_text" class="subsection" >
         <pre><span style="background-color:#bcc5b0; padding:2px 6px;border-radius: 2px;">Aromas</span></pre>
         <p>An aroma refers to the smells unique to the grape variety and are most readily demonstrated in a varietal wine – such as lychees with Gewürztraminer or black currant with Cabernet Sauvignon. These are smells that are commonly associated with a young wine. As a wine ages, chemical reactions among acids, sugars, alcohols and phenolic compounds create new smells that are known as a wine's bouquet. These can include honey in an aged Sauternes or truffles in a Pinot noir.</p>
@@ -53,15 +53,17 @@
             }
         }
 
+        
         document.addEventListener("scroll",function(){
         if(inView("aromas_text")){
-            document.getElementById("image-1").style.visibility = visible;
-            document.getElementById("image-2").style.visibility = hidden;
+            document.getElementById("image-1").style.visibility = 'visible';
+            document.getElementById("image-2").style.visibility = 'hidden';
  
         }
         if(inView("bouquet_text")){
-            document.getElementById("image-2").style.visibility = visible;
-            document.getElementById("image-1").style.visibility = hidden;
+            document.getElementById("image-1").style.visibility = 'hidden';
+            document.getElementById("image-2").style.visibility = 'visible';
+
 
         }
        
